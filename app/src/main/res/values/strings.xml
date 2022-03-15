@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">LearnAndroid</string>
+    <string name="subbuttonname">서브페이지이동</string>
 </resources>

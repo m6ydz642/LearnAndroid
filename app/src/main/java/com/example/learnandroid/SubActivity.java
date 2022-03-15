@@ -14,7 +14,7 @@ public class SubActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_sub);
 
         Button webbutton = (Button) findViewById(R.id.webbutton);
         Button dialbutton = (Button) findViewById(R.id.dialbutton);
