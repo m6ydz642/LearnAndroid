@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">LearnAndroid</string>
     <string name="subbuttonname">서브페이지이동</string>
+    <string name="calcbutonname">계산기 페이지 이동</string>
+    <string name="number1">숫자 1</string>
+    <string name="number2">숫자 2</string>
+    <string name="Add">더하기</string>
+    <string name="Minus">빼기</string>
+    <string name="Multiple">곱하기</string>
+    <string name="Split">나누기</string>
 </resources>

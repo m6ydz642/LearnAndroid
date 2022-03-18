@@ -27,4 +27,9 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+
+    public void calcbutton(View view) {
+        Intent intent = new Intent(getApplicationContext(), CalcActivity.class);
+        startActivity(intent);
+    }
 }
