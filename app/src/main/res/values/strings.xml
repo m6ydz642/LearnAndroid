@@ -8,5 +8,6 @@
     <string name="Minus">빼기</string>
     <string name="Multiple">곱하기</string>
     <string name="Split">나누기</string>
+    <string name="Rest">나머지 : </string>
     <string name="TextResult">계산 결과 : </string>
 </resources>

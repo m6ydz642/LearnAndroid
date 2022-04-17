@@ -14,7 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class CalcActivity extends AppCompatActivity {
 
     EditText edit1, edit2;
-    Button btnAdd, btnSub, btnMul, btnDiv;
+    Button btnAdd, btnSub, btnMul, btnDiv, btnRest;
     TextView textResult;
     String num1, num2;
     Integer result;
@@ -32,21 +32,21 @@ public class CalcActivity extends AppCompatActivity {
         btnSub = (Button)  findViewById(R.id.BtnMinus);
         btnMul = (Button) findViewById(R.id.BtnMinus);
         btnDiv = (Button) findViewById(R.id.BtnSplit);
+        btnRest = (Button) findViewById(R.id.BtnRest); // 나머지
         textResult = (TextView) findViewById(R.id.TextResult);
+
         String msg = "값을 입력해주세요";
+
         // OnClick이벤트로 변경
         btnAdd.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view){
-
-
                 if (!TextUtils.isEmpty(edit1.getText().toString()) && !TextUtils.isEmpty(edit2.getText().toString())  ){
                     // 나머지 조건은 그냥 안함
                     num1 = edit1.getText().toString();
                     num2 = edit2.getText().toString();
                     result = Integer.parseInt(num1) + Integer.parseInt(num2);
-                    textResult.setText("계산결과 : " + result.toString());
+                    textResult.setText("계산 결과 : " + result.toString());
                 }else Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_LONG).show();
-
             }
         });
 
@@ -55,7 +55,7 @@ public class CalcActivity extends AppCompatActivity {
                 num1 = edit1.getText().toString();
                 num2 = edit2.getText().toString();
                 result = Integer.parseInt(num1) - Integer.parseInt(num2);
-                textResult.setText("계산결과 : " + result.toString());
+                textResult.setText("계산 결과 : " + result.toString());
             }
         });
         btnMul.setOnClickListener(new View.OnClickListener() {
@@ -63,7 +63,7 @@ public class CalcActivity extends AppCompatActivity {
                 num1 = edit1.getText().toString();
                 num2 = edit2.getText().toString();
                 result = Integer.parseInt(num1) * Integer.parseInt(num2);
-                textResult.setText("계산결과 : " + result.toString());
+                textResult.setText("계산 결과 : " + result.toString());
             }
         });
 
@@ -72,9 +72,21 @@ public class CalcActivity extends AppCompatActivity {
                 num1 = edit1.getText().toString();
                 num2 = edit2.getText().toString();
                 result = Integer.parseInt(num1) / Integer.parseInt(num2);
-                textResult.setText("계산결과 : " + result.toString());
+                textResult.setText("계산 결과 : " + result.toString());
             }
         });
+
+        btnRest.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view){
+                if (!TextUtils.isEmpty(edit1.getText().toString()) && !TextUtils.isEmpty(edit2.getText().toString())  ){
+                    num1 = edit1.getText().toString();
+                    num2 = edit2.getText().toString();
+                    result = Integer.parseInt(num1) % Integer.parseInt(num2);
+                    textResult.setText("계산 결과 : " + result.toString());
+                }else Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_LONG).show();
+            }
+        });
+
 
 /*        btnAdd.setOnTouchListener(new View.OnTouchListener() {
             public boolean onTouch(View arg0, MotionEvent arg1){
