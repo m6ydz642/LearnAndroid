@@ -33,7 +33,7 @@ public class CalcActivity extends AppCompatActivity {
         textResult = (TextView) findViewById(R.id.TextResult);
 
 
-        btnAdd.setOnTouchListener(new View.OnTouchListener() {
+/*        btnAdd.setOnTouchListener(new View.OnTouchListener() {
             public boolean onTouch(View arg0, MotionEvent arg1){
                 num1 = edit1.getText().toString();
                 num2 = edit2.getText().toString();
@@ -70,7 +70,44 @@ public class CalcActivity extends AppCompatActivity {
                 textResult.setText("계산결과 : " + result.toString());
                 return false;
             }
+        });*/
+
+        // OnClick이벤트로 변경
+        btnAdd.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view){
+                num1 = edit1.getText().toString();
+                num2 = edit2.getText().toString();
+                result = Integer.parseInt(num1) + Integer.parseInt(num2);
+                textResult.setText("계산결과 : " + result.toString());
+            }
         });
+
+        btnSub.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View arg0){
+                num1 = edit1.getText().toString();
+                num2 = edit2.getText().toString();
+                result = Integer.parseInt(num1) - Integer.parseInt(num2);
+                textResult.setText("계산결과 : " + result.toString());
+            }
+        });
+        btnMul.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View arg0){
+                num1 = edit1.getText().toString();
+                num2 = edit2.getText().toString();
+                result = Integer.parseInt(num1) * Integer.parseInt(num2);
+                textResult.setText("계산결과 : " + result.toString());
+            }
+        });
+
+        btnDiv.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View arg0){
+                num1 = edit1.getText().toString();
+                num2 = edit2.getText().toString();
+                result = Integer.parseInt(num1) / Integer.parseInt(num2);
+                textResult.setText("계산결과 : " + result.toString());
+            }
+        });
+
 
     }
 
