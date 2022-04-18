@@ -18,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         Button subpagebutton = (Button)findViewById(R.id.subactivitybutton);
+        Button btnCheckboxActivity = (Button)findViewById(R.id.btnCheckBoxActivity);
+
         subpagebutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -26,8 +28,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btnCheckboxActivity.setOnClickListener( new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), CheckBoxActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
+    // onClick으로 윈폼처럼 추가 하는 방식 (리스너로 계속 추가하니 오류 나서)
     public void calcbutton(View view) {
         Intent intent = new Intent(getApplicationContext(), CalcActivity.class);
         startActivity(intent);

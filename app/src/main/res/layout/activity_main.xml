@@ -29,12 +29,21 @@
         android:layout_marginTop="48dp"
         android:layout_marginEnd="43dp"
         android:layout_marginBottom="635dp"
+        android:text="@string/subbuttonname"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:text="@string/subbuttonname"
-        tools:layout_editor_absoluteX="236dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnCheckBoxActivity"
+        android:layout_width="179dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="20dp"
+        android:text="체크박스 페이지이동"
+        app:layout_constraintTop_toBottomOf="@+id/calcaivitybutton"
+        tools:layout_editor_absoluteX="17dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
