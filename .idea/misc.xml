@@ -10,6 +10,8 @@
         <entry key="app/src/main/res/layout/activity_calc.xml" value="0.254981884057971" />
         <entry key="app/src/main/res/layout/activity_checkbox.xml" value="0.5" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.254981884057971" />
+        <entry key="app/src/main/res/layout/activity_radiobutton.xml" value="0.7915057915057915" />
+        <entry key="app/src/main/res/layout/activity_swichtoggle.xml" value="0.33" />
       </map>
     </option>
   </component>
