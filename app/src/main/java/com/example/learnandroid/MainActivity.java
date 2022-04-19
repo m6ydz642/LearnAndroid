@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         Button subpagebutton = (Button)findViewById(R.id.subactivitybutton);
-        Button btnCheckboxActivity = (Button)findViewById(R.id.btnCheckBoxActivity);
+        Button btnClickCheckboxActivity = (Button)findViewById(R.id.btnCheckBoxActivity);
 
         subpagebutton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btnCheckboxActivity.setOnClickListener( new View.OnClickListener(){
+        btnClickCheckboxActivity.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), CheckBoxActivity.class);
@@ -43,4 +43,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(), CalcActivity.class);
         startActivity(intent);
     }
+
+   /* public void btnClickCheckBox(View view) {
+        Intent intent = new Intent(getApplicationContext(), CheckBoxActivity.class);
+        startActivity(intent);
+    }*/
 }
