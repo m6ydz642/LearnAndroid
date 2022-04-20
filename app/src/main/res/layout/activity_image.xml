@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="87dp"
+        android:layout_height="37dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/android_robot"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="3dp" /> <!--좌우에 꽉 맞춤 후 확대-->
+
+    <ImageView
+        android:layout_width="85dp"
+        android:layout_height="33dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/android_robot"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="47dp" /> <!--중앙에 맞춰서 확대-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
