@@ -68,8 +68,10 @@ public class AnimalActivity extends AppCompatActivity
                         break;
                     case R.id.rdbCat:
                         imgPet.setImageResource(R.drawable.cat);
+                        break;
                     case R.id.rdbRabbit:
                         imgPet.setImageResource(R.drawable.rabbit);
+                        break;
                     default:
                         Toast.makeText(getApplicationContext(), "동물을 먼저 선택하세요", Toast.LENGTH_SHORT).show();
                 }

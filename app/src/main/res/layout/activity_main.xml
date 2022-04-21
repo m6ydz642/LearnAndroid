@@ -58,5 +58,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnCheckBoxActivity" />
 
+    <Button
+        android:id="@+id/btnAndroidActiviry"
+        android:layout_width="192dp"
+        android:layout_height="51dp"
+        android:text="안드로이드 버전 페이지"
+        tools:layout_editor_absoluteX="203dp"
+        tools:layout_editor_absoluteY="117dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
