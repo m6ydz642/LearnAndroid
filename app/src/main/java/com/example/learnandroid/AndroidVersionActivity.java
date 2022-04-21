@@ -1,5 +1,7 @@
 package com.example.learnandroid;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -72,5 +74,25 @@ public class AndroidVersionActivity extends AppCompatActivity {
                 }
             });
         }
+
+        Button.OnClickListener clickListener;
+        clickListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switch (v.getId()) {
+                    case R.id.btnHome:
+                        finish();//인텐트 종료
+                        overridePendingTransition(0, 0); //인텐트 효과 없애기
+                        Intent intent = getIntent();
+                        startActivity(intent); // 액티비티 열기
+                        break;
+                    case R.id.btnExit:
+                        moveTaskToBack(true); // 태스크를 백그라운드로 이동
+                        finishAndRemoveTask(); // 액티비티 종료 + 태스크 리스트에서 지우기
+                        System.exit(0);
+                }
+            }
+
+        };
     }
 }
