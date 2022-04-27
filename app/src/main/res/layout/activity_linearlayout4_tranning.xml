@@ -12,8 +12,7 @@
         android:layout_height="100dp"
         android:layout_gravity="center"
         android:gravity="top|right"
-        android:text="버튼1"
-        android:or/>
+        android:text="버튼1"/>
 
     <Button
         android:layout_width="110dp"
