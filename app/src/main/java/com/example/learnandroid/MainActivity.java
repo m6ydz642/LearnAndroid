@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         Button btnClickCheckboxActivity = (Button)findViewById(R.id.btnCheckBoxActivity);
         Button btnAnimalActivity = (Button)findViewById(R.id.btnAnimalActivity);
         Button btnAndroidActiviry = (Button)findViewById(R.id.btnAndroidActiviry);
+        Button btnMakeLinearLayoutOnJavaCodeActivity = (Button)findViewById(R.id.btnMakeLinearLayoutOnJavaCodeActivity);
 
         btnAndroidActiviry.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,6 +50,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), CheckBoxActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnMakeLinearLayoutOnJavaCodeActivity.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), MakeLinearLayoutOnJavaCodeActivity.class);
                 startActivity(intent);
             }
         });
