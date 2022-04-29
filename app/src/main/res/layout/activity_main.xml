@@ -74,4 +74,12 @@
         app:layout_constraintStart_toEndOf="@+id/btnCheckBoxActivity"
         app:layout_constraintTop_toBottomOf="@+id/subactivitybutton" />
 
+    <Button
+        android:id="@+id/btnMakeLinearLayoutOnJavaCodeActivity"
+        android:layout_width="192dp"
+        android:layout_height="51dp"
+        android:text="자바코드로 버튼 만들기"
+        tools:layout_editor_absoluteX="203dp"
+        tools:layout_editor_absoluteY="177dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
