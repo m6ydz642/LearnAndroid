@@ -13,29 +13,24 @@
         android:layout_marginStart="28dp"
         android:layout_marginTop="48dp"
         android:layout_marginEnd="75dp"
-        android:layout_marginBottom="635dp"
+        android:onClick="calcbutton"
         android:text="@string/calcbutonname"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/subactivitybutton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:onClick="calcbutton"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/subactivitybutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="280dp"
         android:layout_marginTop="48dp"
-        android:layout_marginEnd="43dp"
-        android:layout_marginBottom="635dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="20dp"
         android:text="@string/subbuttonname"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnCheckBoxActivity"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintStart_toEndOf="@+id/calcaivitybutton"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnCheckBoxActivity"
@@ -43,10 +38,11 @@
         android:layout_height="52dp"
         android:layout_marginStart="17dp"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="7dp"
         android:text="체크박스 페이지이동"
+        app:layout_constraintEnd_toStartOf="@+id/btnAndroidActiviry"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/calcaivitybutton"
-    />
+        app:layout_constraintTop_toBottomOf="@+id/calcaivitybutton" />
 
     <Button
         android:id="@+id/btnAnimalActivity"
@@ -62,8 +58,20 @@
         android:id="@+id/btnAndroidActiviry"
         android:layout_width="192dp"
         android:layout_height="51dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="21dp"
         android:text="안드로이드 버전 페이지"
-        tools:layout_editor_absoluteX="203dp"
-        tools:layout_editor_absoluteY="117dp" />
+        app:layout_constraintStart_toEndOf="@+id/btnCheckBoxActivity"
+        app:layout_constraintTop_toBottomOf="@+id/subactivitybutton" />
+
+    <Button
+        android:id="@+id/btnTranning4Activity"
+        android:layout_width="192dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="80dp"
+        android:text="안드로이드 4장 연습"
+        app:layout_constraintStart_toEndOf="@+id/btnCheckBoxActivity"
+        app:layout_constraintTop_toBottomOf="@+id/subactivitybutton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

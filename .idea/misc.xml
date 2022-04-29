@@ -3,20 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="../../../../layout/custom_preview.xml" value="0.165625" />
+        <entry key="..\:/Users/m6ydz/StudioProjects/LearnAndroid/app/src/main/res/layout/activity_androidversion.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/m6ydz/StudioProjects/LearnAndroid/app/src/main/res/layout/activity_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/m6ydz/StudioProjects/LearnAndroid/app/src/main/res/layout/activity_tranning4.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/m6ydz642/AndroidStudioProjects/LearnAndroid/app/src/main/res/layout/activity_calc.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/m6ydz642/AndroidStudioProjects/LearnAndroid/app/src/main/res/layout/activity_main.xml" value="0.3359375" />
         <entry key="..\:/Users/m6ydz642/AndroidStudioProjects/LearnAndroid/app/src/main/res/layout/activity_sub.xml" value="0.5" />
-        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.146" />
-        <entry key="app/src/main/res/layout/activity_androidversion.xml" value="0.43157894736842106" />
-        <entry key="app/src/main/res/layout/activity_animal.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_calc.xml" value="0.254981884057971" />
-        <entry key="app/src/main/res/layout/activity_checkbox.xml" value="0.5" />
-        <entry key="app/src/main/res/layout/activity_image.xml" value="0.67" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_radiobutton.xml" value="0.7915057915057915" />
-        <entry key="app/src/main/res/layout/activity_sub.xml" value="0.134375" />
-        <entry key="app/src/main/res/layout/activity_swichtoggle.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.254981884057971" />
       </map>
     </option>
   </component>

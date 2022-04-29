@@ -21,7 +21,16 @@ public class MainActivity extends AppCompatActivity {
         Button btnClickCheckboxActivity = (Button)findViewById(R.id.btnCheckBoxActivity);
         Button btnAnimalActivity = (Button)findViewById(R.id.btnAnimalActivity);
         Button btnAndroidActiviry = (Button)findViewById(R.id.btnAndroidActiviry);
+        Button btnTranning_4Activiry = (Button)findViewById(R.id.btnTranning4Activity);
 
+        btnTranning_4Activiry.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Tranning_4Activity.class);
+                startActivity(intent);
+            }
+        });
         btnAndroidActiviry.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
