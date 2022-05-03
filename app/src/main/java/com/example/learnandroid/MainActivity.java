@@ -23,7 +23,15 @@ public class MainActivity extends AppCompatActivity {
         Button btnAndroidActiviry = (Button)findViewById(R.id.btnAndroidActiviry);
         Button btnMakeLinearLayoutOnJavaCodeActivity = (Button)findViewById(R.id.btnMakeLinearLayoutOnJavaCodeActivity);
         Button btnTranning_4Activiry = (Button)findViewById(R.id.btnTranning4Activity);
+        Button btnCalcTableLayout = (Button)findViewById(R.id.btnCalcTableLayoutActivity);
 
+        btnCalcTableLayout.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), CalcTableRowActivity.class);
+                startActivity(intent);
+            }
+        });
         btnTranning_4Activiry.setOnClickListener(new View.OnClickListener(){
 
             @Override
