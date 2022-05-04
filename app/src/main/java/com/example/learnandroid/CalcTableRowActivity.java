@@ -68,7 +68,7 @@ public class CalcTableRowActivity extends AppCompatActivity {
                 }
             });
         }
-
+        // 분기 테스트
         // OnClick이벤트로 변경
                 btnAdd.setOnClickListener(new View.OnClickListener() {
                     public void onClick(View view){
