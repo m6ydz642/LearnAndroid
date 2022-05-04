@@ -13,11 +13,12 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class CalcTableRowActivity extends AppCompatActivity {
+    // 익명 클래스 안에서 변수 사용시 오류 있어서 전역으로 뺌
     String num1, num2;
     EditText edit1, edit2;
     Button btnAdd, btnSub, btnMul, btnDiv, btnRest;
     TextView textResult;
-
+    int i;
     Integer result;
     Button[] numButtons = new Button[10];
     Integer[] numBtnIDs = {
@@ -30,7 +31,7 @@ public class CalcTableRowActivity extends AppCompatActivity {
         setContentView(R.layout.activity_tablelayout_calc);
 
 
-        int i;
+
         btnAdd = (Button) findViewById(R.id.btnAddCalc);
         btnSub = (Button)  findViewById(R.id.btnMinusCalc);
         btnMul = (Button) findViewById(R.id.btnMultipleCalc);
@@ -42,10 +43,36 @@ public class CalcTableRowActivity extends AppCompatActivity {
         edit2 = (EditText) findViewById(R.id.et_tl_number2);
         String msg = "값을 입력해주세요";
 
+        for(i=0; i < numBtnIDs.length; i++)
+            numButtons[i] = (Button) findViewById(numBtnIDs[i]);
+
+        for(i=0; i < numBtnIDs.length; i++) {
+            final int index;
+            index = i;
+
+            numButtons[index].setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (edit1.isFocused()) {
+                        num1 = edit1.getText().toString() + numButtons[index].getText().toString();
+                        // 버튼 한개 한개 누를 때 마다 기존 값이 같이 가야 하는데 본 문장이 없으면 버튼 두자리 입력 안됨 기존껄 지워서
+                      //  num1 = numButtons[index].getText().toString();
+                        edit1.setText(num1);
+                    } else if (edit2.isFocused()) {
+                        num2 = edit2.getText().toString() + numButtons[index].getText().toString();
+                    //    num2 = numButtons[index].getText().toString();
+                        edit2.setText(num2);
+                    }else{
+                        Toast.makeText(getApplicationContext(), "먼저 텍스트를 선택하세요", Toast.LENGTH_SHORT).show();
+                    }
+                }
+            });
+        }
+
         // OnClick이벤트로 변경
-        btnAdd.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view){
-                if (!TextUtils.isEmpty(edit1.getText().toString()) && !TextUtils.isEmpty(edit2.getText().toString())  ){
+                btnAdd.setOnClickListener(new View.OnClickListener() {
+                    public void onClick(View view){
+                        if (!TextUtils.isEmpty(edit1.getText().toString()) && !TextUtils.isEmpty(edit2.getText().toString())  ){
                     // 나머지 조건은 그냥 안함
                     num1 = edit1.getText().toString();
                     num2 = edit2.getText().toString();
