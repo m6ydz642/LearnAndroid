@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         Button btnMakeLinearLayoutOnJavaCodeActivity = (Button)findViewById(R.id.btnMakeLinearLayoutOnJavaCodeActivity);
         Button btnTranning_4Activiry = (Button)findViewById(R.id.btnTranning4Activity);
         Button btnCalcTableLayout = (Button)findViewById(R.id.btnCalcTableLayoutActivity);
+        Button btnActivityClock = (Button)findViewById(R.id.btnClockActivity);
 
         btnCalcTableLayout.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -76,6 +77,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), MakeLinearLayoutOnJavaCodeActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnActivityClock.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), ClockActivity.class);
                 startActivity(intent);
             }
         });

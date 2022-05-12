@@ -27,6 +27,7 @@
         <activity android:name=".Tranning_4Activity" />
         <activity android:name=".MakeLinearLayoutOnJavaCodeActivity" />
         <activity android:name=".CalcTableRowActivity" />
+        <activity android:name=".TableLayoutCalcActivity" />
     </application>
 
 </manifest>
