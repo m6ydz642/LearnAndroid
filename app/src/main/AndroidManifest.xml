@@ -29,6 +29,7 @@
         <activity android:name=".CalcTableRowActivity" />
         <activity android:name=".TableLayoutCalcActivity" />
         <activity android:name=".ClockActivity" />
+        <activity android:name=".FileWriteActivity" />
     </application>
 
 </manifest>

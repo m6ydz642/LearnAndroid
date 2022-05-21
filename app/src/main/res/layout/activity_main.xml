@@ -93,6 +93,14 @@
             android:text="시계 위젯"
             />
 
+        <Button
+        android:id="@+id/btnFileWriteActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="파일 읽기"
+            android:layout_marginLeft="10dp"
+        />
+
     </LinearLayout>
 
 

@@ -9,6 +9,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import java.io.File;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -25,6 +27,15 @@ public class MainActivity extends AppCompatActivity {
         Button btnTranning_4Activiry = (Button)findViewById(R.id.btnTranning4Activity);
         Button btnCalcTableLayout = (Button)findViewById(R.id.btnCalcTableLayoutActivity);
         Button btnActivityClock = (Button)findViewById(R.id.btnClockActivity);
+        Button btnFileWriteActivity = (Button)findViewById(R.id.btnFileWriteActivity);
+
+        btnFileWriteActivity.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), FileWriteActivity.class);
+                startActivity(intent);
+            }
+        });
 
         btnCalcTableLayout.setOnClickListener(new View.OnClickListener(){
             @Override
