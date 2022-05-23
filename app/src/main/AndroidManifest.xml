@@ -30,6 +30,7 @@
         <activity android:name=".TableLayoutCalcActivity" />
         <activity android:name=".ClockActivity" />
         <activity android:name=".FileWriteActivity" />
+        <activity android:name=".DiaryActivity" />
     </application>
 
 </manifest>
