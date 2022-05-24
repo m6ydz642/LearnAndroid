@@ -64,6 +64,7 @@ public class DiaryActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),  fileName + "이 저장되었습니다", Toast.LENGTH_SHORT).show();
 
                 }catch (Exception e){
+                    Toast.makeText(getApplicationContext(),  "오류발생", Toast.LENGTH_SHORT).show();
 
                 }
             }
