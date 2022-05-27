@@ -31,7 +31,7 @@
         <activity android:name=".ClockActivity" />
         <activity android:name=".FileWriteActivity" />
         <activity android:name=".DiaryActivity" />
-        <activity android:name=".ListViewActivity" />
+        <activity android:name=".TabViewListViewActivity" />
     </application>
 
 </manifest>

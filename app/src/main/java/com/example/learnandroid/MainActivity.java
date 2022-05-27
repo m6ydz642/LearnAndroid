@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         btnListViewActivity.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), ListViewActivity.class);
+                Intent intent = new Intent(getApplicationContext(), TabViewListViewActivity.class);
                 startActivity(intent);
             }
         });
