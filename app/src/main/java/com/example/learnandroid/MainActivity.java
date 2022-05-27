@@ -29,6 +29,15 @@ public class MainActivity extends AppCompatActivity {
         Button btnActivityClock = (Button)findViewById(R.id.btnClockActivity);
         Button btnFileWriteActivity = (Button)findViewById(R.id.btnFileWriteActivity);
         Button btnDiaryActivity = (Button)findViewById(R.id.btnDiaryActivity);
+        Button btnListViewActivity = (Button)findViewById(R.id.btnListViewactivity);
+
+        btnListViewActivity.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), ListViewActivity.class);
+                startActivity(intent);
+            }
+        });
 
         btnDiaryActivity.setOnClickListener(new View.OnClickListener(){
             @Override
