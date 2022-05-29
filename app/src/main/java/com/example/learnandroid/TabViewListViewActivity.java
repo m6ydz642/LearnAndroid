@@ -18,7 +18,7 @@ public class TabViewListViewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_listtab);
         frg = new ListViewActivity();
 
-        getSupportFragmentManager().beginTransaction().add(R.id.normalview, frg).commit(); // 초기화면 지정
+        getSupportFragmentManager().beginTransaction().add(R.id.frame, frg).commit(); // 초기화면 지정
 
         TabLayout tabs = (TabLayout) findViewById(R.id.tabs);
 
@@ -32,7 +32,8 @@ public class TabViewListViewActivity extends AppCompatActivity {
                 if(position == 0){
                     selected = frg;
                 }
-              //  getSupportFragmentManager().beginTransaction().replace(R.id.listview, selected).commit();
+                if(selected != null)
+                getSupportFragmentManager().beginTransaction().replace(R.id.frame, selected).commit();
             }
 
             @Override
