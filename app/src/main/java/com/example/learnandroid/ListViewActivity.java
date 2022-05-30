@@ -33,6 +33,7 @@ public class ListViewActivity extends Fragment {
 
         listView.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
 
+
         return view;
     }
 }
