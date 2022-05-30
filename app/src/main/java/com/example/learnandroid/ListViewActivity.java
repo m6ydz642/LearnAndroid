@@ -12,12 +12,27 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import com.androidquery.AQuery;
+
 public class ListViewActivity extends Fragment {
 
+    private AQuery aQuery = null;
+    ListView listView = null;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.activity_listview, container, false);
+        aQuery = new AQuery(view);
+
+        listView = aQuery.id(R.id.listView1).getListView();
+
+        final String[] mid = {"히어로즈", "24시", "로스트", "브이", "슈퍼내추럴"};
+
+        listView.setAdapter(new ArrayAdapter<String>(getActivity().getApplicationContext(),
+                android.R.layout.simple_list_item_1, mid));
+
+        listView.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
+
         return view;
     }
 }
