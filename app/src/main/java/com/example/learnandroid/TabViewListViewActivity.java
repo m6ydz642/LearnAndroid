@@ -12,6 +12,7 @@ import com.google.android.material.tabs.TabLayout;
 public class TabViewListViewActivity extends AppCompatActivity {
     Fragment frg;
     Fragment frg2;
+    Fragment frg3;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -19,6 +20,7 @@ public class TabViewListViewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_listtab);
         frg = new ListViewActivity();
         frg2 = new ListViewActivity2();
+        frg3 = new ListViewActivity3();
 
         getSupportFragmentManager().beginTransaction().add(R.id.frame, frg).commit(); // 초기화면 지정
 
@@ -35,6 +37,8 @@ public class TabViewListViewActivity extends AppCompatActivity {
                     selected = frg;
                 }     else if(position == 1){
                     selected = frg2;
+                } else if(position == 2){
+                    selected = frg3;
                 }
                 if(selected != null)
                 getSupportFragmentManager().beginTransaction().replace(R.id.frame, selected).commit();

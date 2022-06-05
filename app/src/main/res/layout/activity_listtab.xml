@@ -20,6 +20,11 @@ android:layout_height="match_parent"
             android:layout_height="wrap_content"
             android:text="체크박스 뷰"/>
 
+    <com.google.android.material.tabs.TabItem
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="동적 리스트 뷰"/>
+
 </com.google.android.material.tabs.TabLayout>
 
 
