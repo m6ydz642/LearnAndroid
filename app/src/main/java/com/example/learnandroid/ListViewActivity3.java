@@ -16,6 +16,7 @@ import androidx.fragment.app.Fragment;
 
 import com.androidquery.AQuery;
 
+import java.sql.Array;
 import java.util.ArrayList;
 
 public class ListViewActivity3 extends Fragment {
@@ -34,9 +35,15 @@ public class ListViewActivity3 extends Fragment {
         final ArrayList<String> midList = new ArrayList<String>();
 
 
-        listView3.setAdapter(new ArrayAdapter<String>(getActivity().getApplicationContext(),
+/*        listView3.setAdapter(new ArrayAdapter<String>(getActivity().getApplicationContext(),
                 android.R.layout.simple_list_item_1, midList));
 
+                 이방법도 되고
+*/
+
+        // 이 방법도 됨
+        ArrayAdapter<String> adpater = new ArrayAdapter<String>(getActivity().getApplicationContext(),android.R.layout.simple_list_item_1, midList);
+        listView3.setAdapter(adpater);
         listView3.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
 
         Button btnAdd = (Button)aQuery.id(R.id.btnAddListView).getView();
@@ -45,15 +52,16 @@ btnAdd.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View view) {
         midList.add(editText.getText().toString());
-        listView3.deferNotifyDataSetChanged();;
+        // listView3.deferNotifyDataSetChanged();
+        adpater.notifyDataSetChanged();
     }
 });
 
-listView3.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+listView3.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() { // 꾹 누르면
     @Override
     public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
         midList.remove(i);
-        listView3.deferNotifyDataSetChanged();;
+        adpater.notifyDataSetChanged();
         return false;
     }
 });
