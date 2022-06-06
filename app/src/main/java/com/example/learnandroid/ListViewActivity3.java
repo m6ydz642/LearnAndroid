@@ -31,10 +31,14 @@ public class ListViewActivity3 extends Fragment {
 
         listView3 = aQuery.id(R.id.listView3).getListView();
 
-        final String[] mid = {"히어로즈_동적", "24시_동적", "로스트_동적", "브이_동적", "슈퍼내추럴_동적"};
+        final String[] mid = {"히어로즈_동적", "24시_동적", "로스트_동적", "브이_동적", "슈퍼내추럴_동적"}; // 안씀
         final ArrayList<String> midList = new ArrayList<String>();
 
-
+        midList.add("히어로즈_동적");
+        midList.add("24시_동적");
+        midList.add("로스트_동적");
+        midList.add("브이_동적");
+        midList.add("슈퍼내추럴_동적");
 /*        listView3.setAdapter(new ArrayAdapter<String>(getActivity().getApplicationContext(),
                 android.R.layout.simple_list_item_1, midList));
 
