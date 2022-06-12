@@ -32,6 +32,7 @@
         <activity android:name=".FileWriteActivity" />
         <activity android:name=".DiaryActivity" />
         <activity android:name=".TabViewListViewActivity" />
+        <activity android:name=".MoviePosterViewActivity" />
     </application>
 
 </manifest>
