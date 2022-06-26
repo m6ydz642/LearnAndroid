@@ -8,6 +8,7 @@
         <entry key="..\:/Users/m6ydz/StudioProjects/LearnAndroid/app/src/main/res/layout/activity_animal.xml" value="0.1875" />
         <entry key="..\:/Users/m6ydz/StudioProjects/LearnAndroid/app/src/main/res/layout/activity_calc.xml" value="0.1875" />
         <entry key="..\:/Users/m6ydz/StudioProjects/LearnAndroid/app/src/main/res/layout/activity_checkbox.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/m6ydz/StudioProjects/LearnAndroid/app/src/main/res/layout/activity_gallery_and_spinner.xml" value="0.33" />
         <entry key="..\:/Users/m6ydz/StudioProjects/LearnAndroid/app/src/main/res/layout/activity_lenaerlayout5_duplicate.xml" value="0.1875" />
         <entry key="..\:/Users/m6ydz/StudioProjects/LearnAndroid/app/src/main/res/layout/activity_linearlayout1.xml" value="0.1875" />
         <entry key="..\:/Users/m6ydz/StudioProjects/LearnAndroid/app/src/main/res/layout/activity_linearlayout2.xml" value="0.1875" />
@@ -18,6 +19,10 @@
         <entry key="..\:/Users/m6ydz/StudioProjects/LearnAndroid/app/src/main/res/layout/activity_linearlayout5_tranningcopies.xml" value="0.1875" />
         <entry key="..\:/Users/m6ydz/StudioProjects/LearnAndroid/app/src/main/res/layout/activity_linearlayout_tranning5.xml" value="0.25" />
         <entry key="..\:/Users/m6ydz/StudioProjects/LearnAndroid/app/src/main/res/layout/activity_linearlayout_tranning5_copies.xml" value="0.33" />
+        <entry key="..\:/Users/m6ydz/StudioProjects/LearnAndroid/app/src/main/res/layout/activity_listtab.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/m6ydz/StudioProjects/LearnAndroid/app/src/main/res/layout/activity_listview.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/m6ydz/StudioProjects/LearnAndroid/app/src/main/res/layout/activity_listview2.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/m6ydz/StudioProjects/LearnAndroid/app/src/main/res/layout/activity_listview3.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/m6ydz/StudioProjects/LearnAndroid/app/src/main/res/layout/activity_main.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/m6ydz/StudioProjects/LearnAndroid/app/src/main/res/layout/activity_relativelayout.xml" value="0.1875" />
         <entry key="..\:/Users/m6ydz/StudioProjects/LearnAndroid/app/src/main/res/layout/activity_relativelayout2.xml" value="0.1875" />
@@ -39,11 +44,9 @@
         <entry key="app/src/main/res/layout/activity_gridlayout_calc_copy.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_lenaerlayout5_duplicate.xml" value="0.12590579710144928" />
         <entry key="app/src/main/res/layout/activity_linearlayout_tranning5_copies.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/activity_listtab.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/activity_listtab.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_listview.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/activity_listview2.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/activity_movieposterview.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_relativelayout.xml" value="0.134375" />
         <entry key="app/src/main/res/layout/activity_relativelayout_tranning5.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_sub.xml" value="0.146875" />
@@ -53,7 +56,6 @@
         <entry key="app/src/main/res/layout/activity_tranning4.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_wearcher.xml" value="0.25" />
         <entry key="app/src/main/res/layout/acvitivy_framelayout.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/dialog.xml" value="0.134375" />
         <entry key="app/src/main/res/layout/materbranch.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/test2.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/test23.xml" value="0.19375" />

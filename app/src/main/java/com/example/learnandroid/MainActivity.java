@@ -31,6 +31,15 @@ public class MainActivity extends AppCompatActivity {
         Button btnDiaryActivity = (Button)findViewById(R.id.btnDiaryActivity);
         Button btnListViewActivity = (Button)findViewById(R.id.btnListViewactivity);
         Button btnMoviePosterViewActivity = (Button)findViewById(R.id.btnMoviePosterViewActivity);
+        Button btnbtnGallery_and_spinnerActivity = (Button)findViewById(R.id.btnGallery_and_spinnerActivity);
+
+        btnbtnGallery_and_spinnerActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Gallery_and_spinnerActivity.class);
+                startActivity(intent);
+            }
+        });
 
         btnMoviePosterViewActivity.setOnClickListener(new View.OnClickListener() {
             @Override

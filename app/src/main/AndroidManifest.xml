@@ -33,6 +33,7 @@
         <activity android:name=".DiaryActivity" />
         <activity android:name=".TabViewListViewActivity" />
         <activity android:name=".MoviePosterViewActivity" />
+        <activity android:name=".Gallery_and_spinnerActivity" />
     </application>
 
 </manifest>
