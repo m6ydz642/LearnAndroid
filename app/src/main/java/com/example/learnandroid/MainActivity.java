@@ -3,13 +3,9 @@ package com.example.learnandroid;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.Color;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-
-import java.io.File;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,12 +27,12 @@ public class MainActivity extends AppCompatActivity {
         Button btnDiaryActivity = (Button)findViewById(R.id.btnDiaryActivity);
         Button btnListViewActivity = (Button)findViewById(R.id.btnListViewactivity);
         Button btnMoviePosterViewActivity = (Button)findViewById(R.id.btnMoviePosterViewActivity);
-        Button btnbtnGallery_and_spinnerActivity = (Button)findViewById(R.id.btnGallery_and_spinnerActivity);
+        Button btnbtnGallery = (Button)findViewById(R.id.btnGallery);
 
-        btnbtnGallery_and_spinnerActivity.setOnClickListener(new View.OnClickListener() {
+        btnbtnGallery.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), Gallery_and_spinnerActivity.class);
+                Intent intent = new Intent(getApplicationContext(), GalleryActivty.class);
                 startActivity(intent);
             }
         });

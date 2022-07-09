@@ -132,7 +132,7 @@
             />
 
         <Button
-            android:id="@+id/btnGallery_and_spinnerActivity"
+            android:id="@+id/btnGallery"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="이미지 와 스피너"

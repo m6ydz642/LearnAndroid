@@ -6,19 +6,18 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.Gallery;
 import android.widget.ImageView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Gallery_and_spinnerActivity extends AppCompatActivity {
+public class GalleryActivty extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_gallery_and_spinner);
+        setContentView(R.layout.activity_gallery);
         setTitle("갤러리 영화 포스터");
-        Gallery gallery = (Gallery)findViewById(R.id.gallery1);
+        android.widget.Gallery gallery = (android.widget.Gallery)findViewById(R.id.gallery1);
         MyGalleryAdapater gallyadapter = new MyGalleryAdapater(this);
         gallery.setAdapter(gallyadapter);
     }
@@ -52,7 +51,7 @@ public class Gallery_and_spinnerActivity extends AppCompatActivity {
         public View getView(int i, View view, ViewGroup viewGroup) {
 
             ImageView imageview = new ImageView(context);
-            imageview.setLayoutParams(new Gallery.LayoutParams(200, 300));
+            imageview.setLayoutParams(new android.widget.Gallery.LayoutParams(200, 300));
             imageview.setScaleType(ImageView.ScaleType.FIT_CENTER);
             imageview.setPadding(5,5,5,5);
             imageview.setImageResource(posterId[i]);

@@ -47,8 +47,8 @@ public class MyGalleryAdapater extends BaseAdapter {
         imageview.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-                Gallery_and_spinnerActivity gallery_and_spinnerActivity = (Gallery_and_spinnerActivity)context;
-                ImageView ivPoster = (ImageView)gallery_and_spinnerActivity.findViewById(R.id.ivPoster2);
+                Gallery Gallery = (Gallery)context;
+                ImageView ivPoster = (ImageView)Gallery.findViewById(R.id.ivPoster2);
               //  ImageView ivPoster = (ImageView)findViewById(R.id.ivPoster2); // 이방식으로 쓰고싶으면 중첩클래스로 Gallery_and_spnnerActivity에 넣으면 됨
                 ivPoster.setScaleType(ImageView.ScaleType.FIT_CENTER);
                 ivPoster.setImageResource(posterId[i]);
