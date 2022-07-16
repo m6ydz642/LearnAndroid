@@ -34,6 +34,7 @@
         <activity android:name=".TabViewListViewActivity" />
         <activity android:name=".MoviePosterViewActivity" />
         <activity android:name=".GalleryActivty" />
+        <activity android:name=".SpinnerActivity" />
     </application>
 
 </manifest>

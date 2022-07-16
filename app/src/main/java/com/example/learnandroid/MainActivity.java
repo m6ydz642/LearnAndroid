@@ -28,7 +28,15 @@ public class MainActivity extends AppCompatActivity {
         Button btnListViewActivity = (Button)findViewById(R.id.btnListViewactivity);
         Button btnMoviePosterViewActivity = (Button)findViewById(R.id.btnMoviePosterViewActivity);
         Button btnbtnGallery = (Button)findViewById(R.id.btnGallery);
+        Button btnSpinner = (Button)findViewById(R.id.btnSpinnerActivity);
 
+        btnSpinner.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), SpinnerActivity.class);
+                startActivity(intent);
+            }
+        });
         btnbtnGallery.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
